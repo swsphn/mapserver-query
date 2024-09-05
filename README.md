@@ -5,8 +5,6 @@ MapServer APIs.
 
 ## Use
 
-Generate query for an ArcGIS MapServer.
-
 Refer to the ArcGIS API docs for supported query parameters:
 https://developers.arcgis.com/rest/services-reference/enterprise/query-feature-service-layer/
 
