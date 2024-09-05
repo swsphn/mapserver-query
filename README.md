@@ -27,6 +27,8 @@ Returns:
 
 Examples:  
 
+    from mapserver_query import mapserver_query
+
     url = "https://geo.abs.gov.au/arcgis/rest/services/ASGS2021/SA2/MapServer/0"
     mapserver_query(
         url,
