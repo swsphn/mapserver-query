@@ -39,6 +39,6 @@ def mapserver_query(url: str, **kwargs) -> str:
         "f": "geojson",
     }
 
-    params = default_params | params | kwargs
+    params = default_params | kwargs
 
     return url + "/query?" + urlencode(params)
