@@ -3,19 +3,27 @@
 This simple module allows you to easily generate query URLs for ArcGIS
 MapServer APIs.
 
+## Install
+
+Install with your favourite package manager.
+For example, install with pip:
+
+    pip install https://github.com/swsphn/mapserver-query.git
+
 ## Use
 
-Refer to the ArcGIS API docs for supported query parameters:
+Refer to the ArcGIS API docs for supported query parameters:  
 https://developers.arcgis.com/rest/services-reference/enterprise/query-feature-service-layer/
 
 Arguments:  
-    url: URL path up to but not including the query. e.g:
-        https://geo.abs.gov.au/arcgis/rest/services/ASGS2021/SA2/MapServer/0
-    **kwargs: specify params as keyword arguments
+
+-   `url`: URL path up to but not including the query. e.g:  
+    https://geo.abs.gov.au/arcgis/rest/services/ASGS2021/SA2/MapServer/0
+-   `**kwargs`: specify params as keyword arguments
 
 Returns:  
-    URL with query appended. e.g:
-    https://geo.abs.gov.au/arcgis/rest/services/ASGS2021/SA2/MapServer/0/query?geometryType=esriGeometryEnvelope"
+    URL with query appended. e.g:  
+    https://geo.abs.gov.au/arcgis/rest/services/ASGS2021/SA2/MapServer/0/query?geometryType=esriGeometryEnvelope
 
 Examples:  
 
