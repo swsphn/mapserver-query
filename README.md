@@ -27,19 +27,19 @@ Returns:
 
 Examples:  
 
-    >>> url = "https://geo.abs.gov.au/arcgis/rest/services/ASGS2021/SA2/MapServer/0"
-    >>> mapserver_query(
-    ...     url,
-    ...     geometry="149.964039508913, -34.7693150002823, 151.075483568455, -33.8017423609583",
-    ...     geometryType="esriGeometryEnvelope",
-    ...     inSR=4326,
-    ...     spatialRel="esriSpatialRelIntersects",
-    ...     outFields="*",
-    ...     returnGeometry="true",
-    ...     featureEncoding="esriDefault",
-    ...     f="geojson",
-    ... )
-    "https://geo.abs.gov.au/arcgis/rest/services/ASGS2021/SA2/MapServer/0/query?geometryType=esriGeometryEnvelope&outFields=%2A&returnGeometry=true&f=geojson&geometry=149.964039508913%2C+-34.7693150002823%2C+151.075483568455%2C+-33.8017423609583&inSR=4326&spatialRel=esriSpatialRelIntersects&featureEncoding=esriDefault"
+    url = "https://geo.abs.gov.au/arcgis/rest/services/ASGS2021/SA2/MapServer/0"
+    mapserver_query(
+        url,
+        geometry="149.964039508913, -34.7693150002823, 151.075483568455, -33.8017423609583",
+        geometryType="esriGeometryEnvelope",
+        inSR=4326,
+        spatialRel="esriSpatialRelIntersects",
+        outFields="*",
+        returnGeometry="true",
+        featureEncoding="esriDefault",
+        f="geojson",
+    )
+    # "https://geo.abs.gov.au/arcgis/rest/services/ASGS2021/SA2/MapServer/0/query?geometryType=esriGeometryEnvelope&outFields=%2A&returnGeometry=true&f=geojson&geometry=149.964039508913%2C+-34.7693150002823%2C+151.075483568455%2C+-33.8017423609583&inSR=4326&spatialRel=esriSpatialRelIntersects&featureEncoding=esriDefault"
 
 Once you have generated a query URL you can use it. For example, you can
 open it in your browser to inspect the JSON data. Or you can pass it to
