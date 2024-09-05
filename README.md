@@ -8,7 +8,11 @@ MapServer APIs.
 Install with your favourite package manager.
 For example, install with pip:
 
-    pip install https://github.com/swsphn/mapserver-query.git
+    pip install mapserver_query@git+https://github.com/swsphn/mapserver-query.git
+
+Or add to a Poetry project:
+
+    poetry add mapserver_query@git+https://github.com/swsphn/mapserver-query.git
 
 ## Use
 
@@ -48,3 +52,9 @@ mapserver_query(
 Once you have generated a query URL you can use it. For example, you can
 open it in your browser to inspect the JSON data. Or you can pass it to
 `requests.get()`, or `geopandas.read_file()` as required.
+
+## Contribute
+
+This project is built with [uv][].
+
+[uv]: https://docs.astral.sh/uv/
