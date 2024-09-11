@@ -1,2 +1,13 @@
 __pycache__/
 .venv/
+
+# We generally don't want to commit data files
+*.csv
+*.xls?
+*.zip
+*.parquet
+*.pdf
+*.json
+
+# Vim swap files
+*.swp
